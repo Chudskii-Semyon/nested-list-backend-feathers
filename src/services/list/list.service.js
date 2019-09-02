@@ -1,4 +1,3 @@
-
 // Initializes the `list` service on path `/list`. (Can be re-generated.)
 const createService = require('feathers-mongoose');
 const createModel = require('../../models/list.model');
@@ -14,6 +13,7 @@ let moduleExports = function (app) {
   let options = {
     Model,
     paginate,
+    multi: true
     // !code: options_more // !end
   };
   // !code: options_change // !end

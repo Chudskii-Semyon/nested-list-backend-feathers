@@ -7,7 +7,6 @@ const mongoose = require('mongoose');
 // !code: init // !end
 
 let moduleExports = merge({},
-  // !<DEFAULT> code: model
   {
     title: {
       type: String,
@@ -21,10 +20,16 @@ let moduleExports = merge({},
     ancestors: {
       type: Array,
       required: true
+    },
+    sublist: {
+      type: Boolean,
+      default: false
+    },
+    position: {
+      type: Number,
+      required: true
     }
   },
-  // !end
-  // !code: moduleExports // !end
 );
 
 // !code: exports // !end

@@ -13,7 +13,6 @@ const {create, update, patch, validateCreate, validateUpdate, validatePatch} = r
 
 let moduleExports = {
   before: {
-    // !<DEFAULT> code: before
     all: [],
     find: [],
     get: [],
@@ -29,7 +28,6 @@ let moduleExports = {
     update: [],
     patch: [],
     remove: []
-    // !end
   },
 
   after: {
