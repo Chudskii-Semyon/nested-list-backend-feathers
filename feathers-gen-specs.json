@@ -1,0 +1,51 @@
+{
+  "options": {
+    "ver": "1.0.0",
+    "inspectConflicts": false,
+    "semicolons": true,
+    "freeze": [],
+    "ts": false
+  },
+  "app": {
+    "environmentsAllowingSeedData": "",
+    "seedData": false,
+    "name": "feathers-nested-list",
+    "description": "Project feathers-nested-list",
+    "src": "src",
+    "packager": "yarn@>= 0.18.0",
+    "providers": [
+      "rest",
+      "socketio"
+    ]
+  },
+  "services": {
+    "list": {
+      "name": "list",
+      "nameSingular": "list",
+      "subFolder": "",
+      "fileName": "list",
+      "adapter": "mongoose",
+      "path": "/list",
+      "isAuthEntity": false,
+      "graphql": false
+    },
+    "items": {
+      "name": "items",
+      "nameSingular": "item",
+      "subFolder": "",
+      "fileName": "items",
+      "adapter": "mongoose",
+      "path": "/items",
+      "isAuthEntity": false,
+      "graphql": false
+    }
+  },
+  "hooks": {},
+  "connections": {
+    "mongoose": {
+      "database": "mongodb",
+      "adapter": "mongoose",
+      "connectionString": "mongodb://localhost:27017/feathers_nested_list"
+    }
+  }
+}
